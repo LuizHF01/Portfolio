@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* VÁRIAVEIS DO PROJETO */
+:root{
+  --letras: #ffffff;
+  --letras-span: #b30505;
+  --fundo: #00008b;
+  --fundo-secundário: #352f2f;
+  --fonte: 'Roboto', sans-serif;
+}
+
+/* CONFIGURAÇÕES DO BODY */
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte);
+}
+
+span{
+  color: var(--letras-span);
+}
+
+/* HEADER + NAVBAR*/
+header{
+  color: var(--letras);
+  font-family: var(--fonte);
+}
+
+section{
+  color: var(--letras);
+}
+
+.navbar h1{
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: var(--fonte);
+  padding-top: 7px;
+}
+
+.row p{
+  font-size: 1.6em;
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* SECTION #SOBRE-MIM*/
+#sobre-mim{
+  background-color: var(--fundo);
+  padding: 10px;
+  font-family: var(--fonte);
+}
+
+.sobre{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--letras);
+  font-weight: 500;
+}
+
+.sobre p{
+  color: var(--letras);
+  font-size: 1em;
+}
+
+/* SECTION #PROJETOS*/
+#projetos{
+  background-color: var(--fundo-secundário);
+}
+
+.projetos{
+  text-align: center;
+  padding: 10px;
+}
+
+.projetos h1{
+  color: var(--letras);
+}
+
+.projetos span{
+  color: var(--letras-span);
+}
+
+.card-body{
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--letras);
+}
+
+/* SECTION HABILIDADES*/
+#habilidades{
+  background-color: var(--fundo);
+  padding: 10px;
+  font-family: var(--fonte);
+  color: var(--letras);
+  text-align: center;
+}
+
+/* SECTION CONTATO*/
+#contato{
+  background-color: var(--fundo-secundário);
+  padding: 10px;
+}
+
+#contato h1{
+  padding: 10px;
+}
+
+footer{
+  background-color: var(--fundo);
+  color: var(--letras);
+}
+
+.text-center p{
+  font-size: 1em;
+  padding: 10px;
+}
