@@ -116,4 +116,10 @@ footer{
 .text-center p{
   font-size: 1em;
   padding: 10px;
+  color: var(--letras-span);
+}
+
+.text-center span{
+  font-weight: bold;
+  color: var(--letras);
 }
