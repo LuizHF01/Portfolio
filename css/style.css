@@ -94,7 +94,6 @@ section{
   background-color: var(--fundo);
   padding: 10px;
   font-family: var(--fonte);
-  color: var(--letras);
   text-align: center;
 }
 
@@ -116,10 +115,42 @@ footer{
 .text-center p{
   font-size: 1em;
   padding: 10px;
-  color: var(--letras-span);
 }
 
 .text-center span{
   font-weight: bold;
   color: var(--letras);
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.box:hover {
+  background-color: #ccc;
+}
+
+#box {
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #inicio {
+    height: 70vh;
+  }
+
+  .row img{
+    justify-content: center;
+  }
 }

@@ -14,13 +14,14 @@
 
 <title>Portfólio LF</title>
 </head>
-<body>
+  <body>
     <header style="background-image: url('./Images/elite.png'); background-size: cover; background-position: center;">  
       <nav class="navbar navbar-expand-sm navbar-expand-sm navbar-expand-lg navbar-light p-2" style="background-color: darkblue;">
         <h1><i class="bi bi-file-earmark-code"></i>Meu <span>Portfolio</span></h1>
-        <button class="navbar-toggler ms-auto navbar-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ms-auto navbar-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid #ffffff;">
           <span class="navbar-toggler-icon" style="width: 1em; height: 1em;"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item ms-auto ">
@@ -41,15 +42,18 @@
           </ul>
         </div>
       </nav>
-      <div class="container">
-        <div class="row align-items-center justify-content-center flex-column flex-md-row">
-          <div class="col-md-6">
-            <p>Olá, bem vindo ao meu portfolio, eu sou Luiz Freitas, um Desenvolvedor Front-End junior.</p>
-          </div>
-          <div class="col-md-6">
-            <img src="./Images/luiz.png" alt="Imagem responsiva" class="img-fluid">
+      <div class="container" id="inicio">
+        <div class="d-flex align-items-center justify-content-center" style="padding-top: 80px;">
+          <div class="row align-items-center justify-content-center flex-column flex-md-row">
+            <div class="col-md-6">
+              <p>Olá, bem vindo ao meu portfolio, eu sou Luiz Freitas, um Desenvolvedor Front-End junior.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="./Images/luiz.png" alt="Imagem responsiva" class="img-fluid">
+            </div>
           </div>
         </div>
+        
       </div>
     </header>
     <!-- Seções da página -->
@@ -151,70 +155,106 @@
     </section>
     <section id="habilidades">
       <h1>Minhas <span>skills</span></h1>
-      <div class="container">
-        <div class="row" style="text-align: center;">
-          <div class="col-12 col-md-6">
-            <i class="fa-brands fa-html5"></i>
-            <div class="card-skills">HTML</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-            </div>
-            <i class="fa-brands fa-css3-alt"></i>
-            <div class="card-skills">CSS</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
-            </div>
-            <i class="fa-brands fa-js"></i>
-            <div class="card-skills">JAVASCRIPT</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-            </div>
-            <i class="fa-brands fa-bootstrap"></i>
-            <div class="card-skills">BOOTSTRAP</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-            </div>
-            <i class="fa-brands fa-sass"></i>
-            <div class="card-skills">SASS</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-            </div>
-            <i class="fa-brands fa-react"></i>
-            <div class="card-skills">REACT</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+      <div class="box d-none d-md-block" id="box">
+        <h3>Título da caixa de texto</h3>
+        <p>Texto da caixa de texto.</p>
+      </div>
+      <div class="container" style="color: #000000;">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('HTML', 'HTML (Hypertext Markup Language) é uma linguagem de marcação utilizada para criar páginas web.')">
+              <div class="card-body">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <p class="card-text">Html 5</p>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <i class="fa-brands fa-git"></i>
-            <div class="card-skills">GIT</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('CSS', 'CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para controlar a aparência visual de uma página web.')">
+              <div class="card-body">
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <p class="card-text">Css</p>
+              </div>
             </div>
-            <i class="fa-brands fa-github"></i>
-            <div class="card-skills">GITHUB</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('JAVASCRIPT', 'JavaScript é uma linguagem de programação que é usada principalmente no lado do cliente para interatividade e dinamismo em uma página web. ')">
+              <div class="card-body">
+                <i class="fa-brands fa-js fa-3x"></i>
+                <p class="card-text">Javascript</p>
+              </div>
             </div>
-            <i class="fa-brands fa-angular"></i>
-            <div class="card-skills">ANGULAR</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('BOOTSTRAP', 'Bootstrap é um framework front-end utilizado para desenvolvimento de sites e aplicativos web responsivos.')">
+              <div class="card-body">
+                <i class="fa-brands fa-bootstrap fa-3x"></i>
+                <p class="card-text">Bootstrap</p>
+              </div>
             </div>
-            <i class="fa-brands fa-vuejs"></i>
-            <div class="card-skills">VUEJS</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('SASS', 'Sass (Syntactically Awesome Style Sheets) é uma linguagem de script utilizada para criar folhas de estilo CSS mais eficientes e fáceis de manter.')">
+              <div class="card-body">
+                <i class="fa-brands fa-sass fa-3x"></i>
+                <p class="card-text">Sass</p>
+              </div>
             </div>
-            <i class="fa-brands fa-php"></i>
-            <div class="card-skills">PHP</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('REACT', 'React é uma biblioteca JavaScript de código aberto para criação de interfaces de usuário.')">
+              <div class="card-body">
+                <i class="fa-brands fa-react fa-3x"></i>
+                <p class="card-text">React</p>
+              </div>
             </div>
-            <i class="fa-brands fa-node"></i>
-            <div class="card-skills">NODE</div>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('GIT', 'Git é um sistema de controle de versão de código aberto utilizado para gerenciar o código-fonte de um projeto.')">
+              <div class="card-body">
+                <i class="fa-brands fa-git fa-3x"></i>
+                <p class="card-text">Git</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('GITHUB', 'GitHub é uma plataforma de hospedagem de código-fonte baseada na web, que permite o armazenamento, controle de versão e colaboração em projetos de software.')">
+              <div class="card-body">
+                <i class="fa-brands fa-github fa-3x"></i>
+                <p class="card-text">Github</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('ANGULAR', 'Angular é um framework front-end de código aberto utilizado para desenvolvimento de aplicativos web e móveis.')">
+              <div class="card-body">
+                <i class="fa-brands fa-angular fa-3x"></i>
+                <p class="card-text">Angular</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('VUEJS', 'Vue.js é um framework front-end de código aberto para construção de interfaces de usuário. Ele é altamente flexível e fácil de integrar com outras bibliotecas ou projetos, tornando-o uma ótima opção para desenvolvedores iniciantes e experientes.')">
+              <div class="card-body">
+                <i class="fa-brands fa-vuejs fa-3x"></i>
+                <p class="card-text">VueJs</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('PHP', 'PHP é uma linguagem de script do lado do servidor usada para criar aplicativos web dinâmicos. Ele é usado principalmente para manipulação de formulários, acesso a bancos de dados e processamento de dados do usuário.')">
+              <div class="card-body">
+                <i class="fa-brands fa-php fa-3x"></i>
+                <p class="card-text">Php</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" onmouseover="mostrarDefinicao('NODEJS', 'Node.js é uma plataforma de software de código aberto utilizada para desenvolvimento de aplicativos web escaláveis e de alta performance.')">
+              <div class="card-body">
+                <i class="fa-brands fa-node fa-3x"></i>
+                <p class="card-text">NodeJs</p>
+              </div>
             </div>
           </div>
         </div>
@@ -260,6 +300,7 @@
     <footer class="text-center">
       <p>Desenvolvido por <span>Luiz Freitas</span> <br>Direitos autorais © 2023 - Todos os direitos reservados</p>
     </footer>
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
